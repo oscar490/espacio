@@ -1,0 +1,13 @@
+.footer {
+    width:100%;
+    position: fixed;
+    background-color: #e7e7e7;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
