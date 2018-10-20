@@ -24,3 +24,12 @@ Route::get('/', function () {
     	'animales' => $animales,
     ]);
 });
+
+Route::get('/login', function() {
+
+	return view('auth.login');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
