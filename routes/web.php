@@ -30,6 +30,8 @@ Route::get('/login', function() {
 	return view('auth.login');
 });
 
+Route::get('/equipo', 'EquipoController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
