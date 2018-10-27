@@ -9,7 +9,7 @@
   <div class="row">
 
       {{-- Menú lateral --}}
-      @include('main_left')
+      @include('main_left', ['equipos' => $equipos])
 
       {{-- Tableros --}}
       <div class="col-md-10">
@@ -23,11 +23,8 @@
               {{$equipo->nombre}}
             </p>
 
-            @foreach ($equipo->tableros as $tablero)
-              <div class="col-md-3 tablero">
-                <p>{{$tablero->nombre}}</p>
-              </div>
-            @endforeach
+            @include('equipo.tableros', ['equipos' => $equipos])
+
           </div>
           <br>
         @endforeach

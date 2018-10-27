@@ -28,9 +28,15 @@ Route::get('/', function () {
 
 Route::get('/login', 'SiteController@login');
 
+Route::get('/prueba', function() {
+	return view('prueba');
+});
+
 Route::post('/autenticar', 'LoginController@autenticar');
 
 Route::get('/tableros', 'EquipoController@index');
+
+Route::get('/tablero/{id}', 'TableroController@view');
 
 //Auth::routes();
 
