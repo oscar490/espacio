@@ -5,9 +5,43 @@
     bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #026aa7;
+    border-color: #026aa7;
 }
 
 html {
   min-height: 100%;
   position: relative;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.navbar-default {
+  background-color: #026aa7;
+  background-image: none;
+  box-shadow: 2px 2px 5px #999;
+  border-color: #026aa7;
+  height: 32px;
+}
+
+.navbar-default .navbar-brand:hover {
+  opacity: 1;
+  color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: 1000;
+  opacity: 0.5;
 }

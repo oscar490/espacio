@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Brand</a>
+      <a class="navbar-brand" href="/">Espacio</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,7 +17,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
-        
+
       </ul>
       --}}
       {{--
@@ -28,10 +28,10 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       --}}
-      
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/login">Login</a></li>
-        
+
       </ul>
 
     </div><!-- /.navbar-collapse -->
