@@ -25,13 +25,13 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/login', function() {
 
-	return view('auth.login');
-});
+Route::get('/login', 'SiteController@login');
 
-Route::get('/equipo', 'EquipoController@index');
+Route::post('/autenticar', 'LoginController@autenticar');
 
-Auth::routes();
+Route::get('/tableros', 'EquipoController@index');
+
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

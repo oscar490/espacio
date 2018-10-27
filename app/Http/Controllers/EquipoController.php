@@ -9,8 +9,10 @@ class EquipoController extends Controller
 {
     public function index()
     {
-    	$model = Equipo::first();
+        $equipos = Equipo::all();
 
-    	
+        return view('equipo.index', [
+            'equipos' => $equipos,
+        ]);
     }
 }
