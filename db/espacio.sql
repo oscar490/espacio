@@ -32,4 +32,5 @@ CREATE TABLE tableros
 );
 
 INSERT INTO tableros (nombre, equipo_id)
-  VALUES ('Prueba', 1), ('Personal', 1), ('Programación', 2);
+  VALUES ('Prueba', 1), ('Personal', 1), ('Programación', 2), ('Lenguaje de marcas', 1),
+          ('Cosas personales', 1), ('Laravel', 1);

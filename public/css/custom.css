@@ -60,6 +60,10 @@ div#equipos p {
   font-size: 18px;
 }
 
+section.content {
+  margin-top: 40px;
+}
+
 .tablero {
   height: 100px;
   width: 200px;
@@ -71,6 +75,9 @@ div#equipos p {
   margin-bottom: 20px;
 }
 
+.tablero:hover {
+  opacity: 0.8;
+}
 .selection {
   color: #026AA7;
   background-color: #E4F0F6;
