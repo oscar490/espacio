@@ -5,31 +5,38 @@
 
 @section('content')
 
-<div class="row">
+<section class="content">
+  <div class="row">
 
-    {{-- Menú lateral --}}
-    @include('main_left')
+      {{-- Menú lateral --}}
+      @include('main_left')
 
-    {{-- Tableros --}}
-    <div class="col-md-10">
+      {{-- Tableros --}}
+      <div class="col-md-10">
 
-      @foreach ($equipos as $equipo)
-        <div id="equipos" class="row">
+        @foreach ($equipos as $equipo)
+          <div id="equipos" class="row">
 
-          <p>{{$equipo->nombre}}</p>
+            <p>
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              &nbsp;
+              {{$equipo->nombre}}
+            </p>
 
-          @foreach ($equipo->tableros as $tablero)
-            <div class="col-md-3 tablero">
-              <p>{{$tablero->nombre}}</p>
-            </div>
-          @endforeach
-        </div>
-      @endforeach
+            @foreach ($equipo->tableros as $tablero)
+              <div class="col-md-3 tablero">
+                <p>{{$tablero->nombre}}</p>
+              </div>
+            @endforeach
+          </div>
+          <br>
+        @endforeach
 
 
-    </div>
+      </div>
 
-</div>
+  </div>
+</section>
 
 
 @endsection
