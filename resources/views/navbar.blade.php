@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Espacio</a>
+      <a class="navbar-brand" href="{{url('/tableros')}}">Espacio</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,7 +30,14 @@
       --}}
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/login">Login</a></li>
+        <li>
+          <a href="{{url('/')}}">
+              <span class="glyphicon glyphicon-home" aria-hidden="true">
+              </span>
+          </a>
+        </li>
+        {{--<li><a href="/login">Login</a></li>--}}
+
 
       </ul>
 

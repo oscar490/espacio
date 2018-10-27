@@ -35,7 +35,8 @@ html {
   height: 32px;
 }
 
-.navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand:hover
+ {
   opacity: 1;
   color: white;
 }
@@ -44,4 +45,53 @@ html {
   color: white;
   font-weight: 1000;
   opacity: 0.5;
+}
+
+.main_item {
+  padding: 5px 5px 5px 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 170px;
+  border-radius: 5px;
+}
+
+div#equipos p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tablero {
+  height: 100px;
+  width: 200px;
+  border-radius: 5px;
+  padding-top: 10px;
+  color: white;
+  background-color: rgb(0, 121, 191);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.selection {
+  color: #026AA7;
+  background-color: #E4F0F6;
+}
+
+.main_item:hover {
+  background-color: #e8e8e8;
+}
+
+ul.navbar-right li a {
+  color: white !important;
+  font-weight: bold;
+  background-color: #418ccc;
+  padding: 10px 10px 10px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  margin-top: 4px;
+}
+
+ul.navbar-right li a:hover,
+ul.navbar-right li a:focus
+ {
+  background-color: #3a7eb7 !important;
 }

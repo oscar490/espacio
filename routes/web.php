@@ -30,7 +30,7 @@ Route::get('/login', 'SiteController@login');
 
 Route::post('/autenticar', 'LoginController@autenticar');
 
-Route::get('/equipo', 'EquipoController@index');
+Route::get('/tableros', 'EquipoController@index');
 
 //Auth::routes();
 
